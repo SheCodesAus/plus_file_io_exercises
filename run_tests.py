@@ -60,7 +60,7 @@ class TestCase(unittest.TestCase):
                     (tag=="p" 
                     and attrdict.get("style", "").strip()==f"color:{row['HEX']};"
                     and data == row['English']),
-                    msg=f"\nInput: {row["English"]}\nExpected result: {intended_result}\nActual result: {actual_result}"
+                    msg=f"""\nInput: {row["English"]}\nExpected result: {intended_result}\nActual result: {actual_result}"""
                 )
 
     def test_galactic_speed_percentile(self):
