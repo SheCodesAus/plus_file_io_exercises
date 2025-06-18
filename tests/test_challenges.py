@@ -5,7 +5,7 @@ from challenges import count_mentions, generate_coloured_text, galactic_speed_pe
 
 class TestCase(unittest.TestCase):
     def test_count_mentions(self):
-        with open("./colours_20_simple.csv", "r") as file:
+        with open("data/colours_20_simple.csv", "r") as file:
             reader = csv.reader(file)
             next(reader, None)
             rgb, hex, colour_names = zip(*reader)
@@ -40,7 +40,7 @@ class TestCase(unittest.TestCase):
                 self.return_value = list()
                 return to_return
         
-        with open("./colours_865.csv", "r") as file:
+        with open("data/colours_865.csv", "r") as file:
             reader = csv.DictReader(file)
             parser = MyHTMLParser()
 
@@ -64,7 +64,7 @@ class TestCase(unittest.TestCase):
                 )
 
     def test_galactic_speed_percentile(self):
-        with open("./galaxies.csv", "r") as file:
+        with open("data/galaxies.csv", "r") as file:
             reader = csv.reader(file)
 
             for index, speed in reader:
@@ -80,7 +80,3 @@ class TestCase(unittest.TestCase):
                     expected_result,
                     msg=f"\nInput: {input_speed}\nExpected result: {expected_result}\nActual result: {actual_result}"
                 )
-
-runner = unittest.TextTestRunner(verbosity=2)
-
-runner.run(unittest.TestSuite((unittest.TestLoader().loadTestsFromTestCase(TestCase))))

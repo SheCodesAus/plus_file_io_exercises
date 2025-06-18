@@ -6,7 +6,6 @@ For each challenge you will be required to write a function. The challenges come
 
 To solve these challenges, you should simply delete the word pass from the function, and write your own logic in the function body. No need to modify the names of the functions or the parameters! Leave the docstrings as they are too - it's good practise to use docstrings to document your code.
 
-You can run the command python run_tests.py in the terminal to check your work. When you have correctly solved all three challenges, the tests will pass. If you make an error in any of the challenges, the tests will tell you what went wrong. You may need to do a little Googling/thinking to figure out what the error messages mean, or how to solve the problem.
+You can run the tests directly from VS Code in the `tests/challenges.py` to check your work. When you have correctly solved all three challenges, the tests will pass. If you make an error in any of the challenges, the tests will tell you what went wrong. You may need to do a little Googling/thinking to figure out what the error messages mean, or how to solve the problem.
 
 If you need help interpreting the challenges, or have a bug you can't solve, grab a mentor for help!
-
